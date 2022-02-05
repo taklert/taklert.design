@@ -3,12 +3,8 @@
   border: 0px;
 }
 
-:root {
-  animation-duration: 300ms all;
-}
-
 body#kontakt {
-  background-color: #8fbcbb8f;
+  background-color: #ECEFF4;
 }
 
 body {
@@ -33,28 +29,28 @@ nav {
   width: fit-content;
   height: fit-content;
   grid-area: nav;
-	text-align: left;
+  text-align: left;
   font-size: 2rem;
-  padding: 1rem;
 }
 
-nav a, h1 a {
-  margin-right: 1rem;
-  border-left: 0.6rem solid #4c566a;
+nav a, nav a:link, nav a:visited {
+  color: #4c566a;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  text-decoration: none;
 }
 
-nav a:hover, h1 a:hover {
-	color: #d8dee9;
+nav a:hover {
 	text-decoration: none;
-	background: #4c566a;
-  border-left: 1rem solid #8fbcbb;
-  box-shadow: 0 0 2px #2e3440,
-              0 0 5px #2e3440;
-  transition: all 300ms ease-in-out;
+  border-right: 1rem solid #4c566a;
+  background-color: #b48ead;
+  padding-right: 1rem;
+  transition: all 0.3s ease-in-out;
 }
 
 img {
-  max-height: 100vh;
+  max-width: 512px;
   grid-area: img;
   align-self: end;
   padding-bottom: 1rem;
@@ -109,35 +105,32 @@ br {
   margin-top: 0.6rem;
 }
 
-a:link {
-  color: #4c566a;
-  background-color: #d8dee9;
+footer a:link {
+  color: #d8dee9;
+  background-color: #4c566a;
   text-decoration: none;
   padding: 0.1rem 0.6rem;
 }
 
-a:visited {
-  color: #4c566a;
-  background-color: #8fbcbb;
-  text-decoration: none;
+footer a:visited {
+  color: #b48ead;
+  text-decoration: underline;
 }
 
-a:hover {
-  color: #d8dee9;
+footer a:hover {
+  color: #4c566a;
   background-color: #b48ead;
-  box-shadow: 0 0 5px #2e3440,
-                0 0 20px #2e3440;
-    transition: all 300ms ease-in-out;
+  transition: ease-in-out;
   text-decoration: underline;
 }
 
 ul li {
-  list-style-type: disc;
+  list-style-type: none;
   list-style: outside;
   list-style-image: url("../img/starlet.png");
   text-align: left;
   line-height: 1.5rem;
-  padding: 0.4rem;
+  padding: 0.2rem;
 }
 
 p {
@@ -214,4 +207,13 @@ p {
       "footer footer"
       "aside aside";
   }
+  nav {
+    font-size: 1.4rem;
+    }
+  h1 {
+    font-size: 1.8rem;
+    }
+  img {
+    max-width: 60vw;
+    }
 }
