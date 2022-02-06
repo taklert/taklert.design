@@ -52,7 +52,7 @@ nav a:hover {
 img {
   max-width: 512px;
   grid-area: img;
-  align-self: end;
+  align-self: flex-end;
   padding: 0rem;
 }
 
