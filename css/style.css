@@ -165,10 +165,10 @@ footer p {
     display: grid;
     height: 100vh;
     grid-template-areas:
-    "header nav nav nav nav"
-    ". . . . ."
-    "img img main aside footer"
-    "img img main aside footer";
+    "header nav nav nav nav nav"
+    ". . . . . ."
+    "img img main aside footer footer"
+    "img img main aside footer footer";
     grid-gap: 0px;
     font-family: 'Raleway', sans-serif;
 }
