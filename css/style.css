@@ -53,7 +53,7 @@ img {
   max-width: 512px;
   grid-area: img;
   align-self: end;
-  padding-bottom: 1rem;
+  padding: 0rem;
 }
 
 main {
@@ -133,6 +133,7 @@ ul li {
   list-style: outside;
   list-style-image: url("../img/starlet.png");
   text-align: left;
+  padding-left: 0.6rem;
 }
 
 p {
