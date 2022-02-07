@@ -213,17 +213,23 @@ footer p {
     font-size: 1.8rem;
     font-weight: 400;
     border-bottom-left-radius: 0rem;
+    z-index: 10;
+    box-shadow: 0 0 5px #4c566a, 0 0 25px #5e81ac;
   }
   nav a {
     max-width: fit-content;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
+    padding-top: 3rem;
+    }
+  .logo-container {
+    padding: 0.2rem;
     margin-top: 3rem;
-    }
-    .logo {
-      margin-top: 3rem;
-    }
+  }
+  .logo {
+    max-height: 2rem;
+  }
   .avatar {
     max-width: 60%;
     }
