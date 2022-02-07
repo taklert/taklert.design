@@ -4,10 +4,10 @@
 			<style>
 				@keyframes rotate {
 					0% {
-						transform: rotate(3deg);
+						transform: rotate(10deg);
 					}
 					100% {
-						transform: rotate(-3deg);
+						transform: rotate(-10deg);
 					}
 				}
 				@keyframes gradientBackground {
@@ -53,7 +53,7 @@
 					background: linear-gradient(-45deg, #fc5c7d, #6a82fb, #05dfd7);
 					background-size: 600% 400%;
 					animation: gradientBackground 10s ease infinite;
-					border-radius: 10px;
+					border-radius: 0.8rem;
 					color: white;
 					text-align: center;
 				}

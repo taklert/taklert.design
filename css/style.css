@@ -31,6 +31,9 @@ nav {
   flex-direction: row;
   width: fit-content;
   height: fit-content;
+  background-color: #4c566a;
+  border-bottom-right-radius: 0.4rem;
+  border-bottom-left-radius: 0.4rem;
   grid-area: nav;
   font-size: 3rem;
   font-weight: 400;
@@ -38,9 +41,10 @@ nav {
 
 nav a, nav a:link, nav a:visited {
   color: #d8dee9;
-  background-color: #4c566a;
   text-decoration: none;
   padding: 0.5rem 1rem;
+  border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem;
 }
 
 nav a:hover {
@@ -146,6 +150,19 @@ footer p {
 
   padding: 0.6rem;
 }
+.logo-container {
+  background-color: #b48ead;
+  max-width: fit-content;
+  max-height: fit-content;
+  padding: 0.2rem 0.4rem;
+  margin-right: 1rem;
+  border-radius: 0.4rem;
+}
+.logo {
+  align-self: center;
+  vertical-align: middle;
+  max-height: 3rem;
+}
 .row {
   display: flex;
   flex-direction: row;
@@ -185,21 +202,29 @@ footer p {
       "aside aside";
   }
   nav {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     width: fit-content;
     height: fit-content;
     grid-area: nav;
     font-size: 1.8rem;
     font-weight: 400;
+    border-bottom-left-radius: 0rem;
   }
   nav a {
     max-width: fit-content;
   }
   h1 {
-    font-size: 1.8rem;
+    font-size: 3rem;
+    margin-top: 3rem;
     }
-  img {
+    .logo {
+      margin-top: 3rem;
+    }
+  .avatar {
     max-width: 60%;
     }
 }
