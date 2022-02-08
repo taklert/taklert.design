@@ -203,29 +203,35 @@ footer p {
   }
   nav {
     position: fixed;
-    top: 0rem;
+    bottom: 0rem;
     left: 0rem;
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    width: 100%;
     height: fit-content;
     grid-area: nav;
     font-size: 1.8rem;
     font-weight: 400;
     border-bottom-left-radius: 0rem;
+    border-bottom-right-radius: 0rem;
+    border-top-right-radius: 0.4rem;
     z-index: 10;
-    box-shadow: 0 0 5px #4c566a, 0 0 25px #5e81ac;
+    background-color: #4c566a;
+    box-shadow: 0 0 5px #4c566a, 0 0 25px #4c566a;
+    border-radius: 0rem;
+    border-top: 0.4rem solid #b48ead;
   }
   nav a {
+    margin: 0 auto;
     max-width: fit-content;
   }
   h1 {
     font-size: 2rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
     }
   .logo-container {
     padding: 0.2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
   }
   .logo {
     max-height: 2rem;
@@ -233,4 +239,8 @@ footer p {
   .avatar {
     max-width: 60%;
     }
+  aside {
+    padding-bottom: 3rem;
+    border-bottom: 3rem solid #b48ead;
+  }
 }
