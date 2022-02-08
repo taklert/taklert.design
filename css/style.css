@@ -35,7 +35,7 @@ nav {
   border-bottom-right-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
   grid-area: nav;
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 400;
 }
 
@@ -89,7 +89,7 @@ footer {
 
 h1 {
   font-weight: 100;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: left;
   color: #4c566a;
 }
@@ -161,7 +161,7 @@ footer p {
 .logo {
   align-self: center;
   vertical-align: middle;
-  max-height: 3rem;
+  max-height: 2rem;
 }
 .row {
   display: flex;
