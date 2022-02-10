@@ -78,6 +78,29 @@ aside {
   border-left: 0.6rem solid #b48ead;
 }
 
+main a {
+  padding: 0.2rem 0.5rem;
+}
+
+main a:link {
+  color: #d8dee9;
+  background-color: #2E3440;
+  text-decoration: none;
+}
+
+main a:visited {
+  color: #b48ead;
+  text-decoration: none;
+}
+
+main a:hover {
+  color: #2E3440;
+  background-color: #b48ead;
+  transition: all 300ms ease-in-out;
+  text-decoration: none;
+  z-index: 10;
+}
+
 footer {
   grid-area: footer;
   align-self: flex-end;
@@ -182,10 +205,10 @@ footer p {
     display: grid;
     height: 100vh;
     grid-template-areas:
-    "header nav nav nav nav nav"
-    ". . . . . ."
-    "img img main aside footer footer"
-    "img img main aside footer footer";
+    "header header nav nav nav nav nav nav"
+    ". . . . . . . ."
+    "img img main main main aside footer footer"
+    "img img main main main aside footer footer";
     grid-gap: 0px;
     font-family: 'Raleway', sans-serif;
 }
