@@ -4,8 +4,13 @@
   clear: all;
 }
 
+:root {
+  --background-color: #4c566a;
+}
+
 body#kontakt {
   background-color: #ECEFF4;
+  transition: all 300ms ease-in-out;
 }
 
 body {
@@ -31,7 +36,6 @@ nav {
   flex-direction: row;
   width: fit-content;
   height: fit-content;
-  background-color: #4c566a;
   border-bottom-right-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
   grid-area: nav;
@@ -50,7 +54,7 @@ nav a, nav a:link, nav a:visited {
 nav a:hover {
   text-decoration: none;
   background-color: #b48ead;
-  transition: all 0.3s ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 img {
@@ -78,22 +82,22 @@ aside {
   border-left: 0.6rem solid #b48ead;
 }
 
-main a {
+a {
   padding: 0.2rem 0.5rem;
 }
 
-main a:link {
+a:link {
   color: #d8dee9;
   background-color: #2E3440;
   text-decoration: none;
 }
 
-main a:visited {
+a:visited {
   color: #b48ead;
   text-decoration: none;
 }
 
-main a:hover {
+a:hover {
   color: #2E3440;
   background-color: #b48ead;
   transition: all 300ms ease-in-out;
@@ -213,6 +217,23 @@ footer p {
     font-family: 'Raleway', sans-serif;
 }
 
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  nav {
+    -webkit-backdrop-filter: blur(5px);
+    background-color: #4c566acc;
+    backdrop-filter: blur(5px);
+    box-shadow: 0px 0px 10px 0px #242424cc;
+  }
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  nav {
+    background-color: #4c566acc;
+    box-shadow: 0px 0px 10px 0px #242424cc;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .grid-container {
     display: grid;
@@ -239,7 +260,6 @@ footer p {
     border-bottom-right-radius: 0rem;
     border-top-right-radius: 0.4rem;
     z-index: 10;
-    background-color: #4c566a;
     box-shadow: 0 0 5px #4c566a, 0 0 25px #4c566a;
     border-radius: 0rem;
     border-top: 0.4rem solid #b48ead;
