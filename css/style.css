@@ -1,11 +1,11 @@
 * {
   margin: 0px;
   border: 0px;
-  clear: all;
+  clear: both;
 }
 
 body#kontakt {
-  background-color: #ECEFF4;
+  background-color: #b7fffe;
 }
 
 body {
@@ -31,12 +31,13 @@ nav {
   flex-direction: row;
   width: fit-content;
   height: fit-content;
-  background-color: #4c566a;
+  background-color: #4c566ad0;
   border-bottom-right-radius: 0.4rem;
   border-bottom-left-radius: 0.4rem;
   grid-area: nav;
   font-size: 2rem;
   font-weight: 400;
+  backdrop-filter: blur(1);
 }
 
 nav a, nav a:link, nav a:visited {
@@ -110,28 +111,6 @@ footer {
   background-color: #3b4252;
 }
 
-h1 {
-  font-weight: 100;
-  font-size: 2rem;
-  text-align: left;
-  color: #4c566a;
-}
-h2, h3 {
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 2rem;
-}
-
-h4 {
-  padding-top: 1rem;
-  margin-bottom: 1rem;
-  font-size: 1.5rem;
-}
-
-br {
-  margin-top: 0.6rem;
-}
-
 footer a {
   padding: 0.2rem 0.5rem;
 }
@@ -155,10 +134,31 @@ footer a:hover {
   z-index: 10;
 }
 
+h1 {
+  font-weight: 100;
+  font-size: 2rem;
+  text-align: left;
+  color: #4c566a;
+}
+h2, h3 {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+h4 {
+  padding-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+br {
+  margin-top: 0.6rem;
+}
+
 ul li {
-  list-style-type: none;
-  list-style: outside;
-  list-style-image: url("../img/starlet.png");
+  list-style: inside;
+  list-style-type: square;
   text-align: left;
   padding-left: 0.6rem;
 }
@@ -169,17 +169,19 @@ p {
   max-height: fit-content;
 }
 
-footer p {
+footer {
 
-  padding: 0.6rem;
+  padding: 1rem;
 }
+
+.titlebold {
+  font-weight: 900;
+}
+
 .logo-container {
-  background-color: #b48ead;
   max-width: fit-content;
   max-height: fit-content;
-  padding: 0.2rem 0.4rem;
-  margin-right: 1rem;
-  border-radius: 0.4rem;
+  margin-right: 0.2rem;
 }
 .logo {
   align-self: center;
@@ -235,14 +237,9 @@ footer p {
     grid-area: nav;
     font-size: 1.8rem;
     font-weight: 400;
-    border-bottom-left-radius: 0rem;
-    border-bottom-right-radius: 0rem;
-    border-top-right-radius: 0.4rem;
-    z-index: 10;
-    background-color: #4c566a;
-    box-shadow: 0 0 5px #4c566a, 0 0 25px #4c566a;
     border-radius: 0rem;
-    border-top: 0.4rem solid #b48ead;
+    z-index: 10;
+    border-top: 0.6rem solid #b48ead;
   }
   nav a {
     margin: 0 auto;
@@ -253,8 +250,10 @@ footer p {
     padding-top: 1rem;
     }
   .logo-container {
-    padding: 0.2rem;
-    margin-top: 1rem;
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-right: 0.2rem;
+    padding-top: 1rem;
   }
   .logo {
     max-height: 2rem;
@@ -265,5 +264,22 @@ footer p {
   aside {
     padding-bottom: 3rem;
     border-bottom: 3rem solid #b48ead;
+  }
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  nav {
+    -webkit-backdrop-filter: blur(20px);
+    background-color: rgba(76, 86, 106, 0.816);
+    backdrop-filter: blur(20px);
+    box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.8);
+  }
+}
+
+/* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+@supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  nav {
+    background-color: rgba(76, 86, 106, 0.816);
+    box-shadow: 10px 10px 20px -6px rgba(0, 0, 0, 0.8);
   }
 }
