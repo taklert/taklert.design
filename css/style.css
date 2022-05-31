@@ -5,7 +5,11 @@
 }
 
 body#kontakt {
-  background-color: #b7fffe;
+  background-color: #c5c5c5;
+}
+
+body#kontakt main {
+  background-color: #2e3440;
 }
 
 body {
@@ -31,27 +35,10 @@ nav {
   flex-direction: row;
   width: fit-content;
   height: fit-content;
-  background-color: #4c566ad0;
-  border-bottom-right-radius: 0.4rem;
-  border-bottom-left-radius: 0.4rem;
   grid-area: nav;
   font-size: 2rem;
   font-weight: 400;
   backdrop-filter: blur(1);
-}
-
-nav a, nav a:link, nav a:visited {
-  color: #d8dee9;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-bottom-left-radius: 0.4rem;
-  border-bottom-right-radius: 0.4rem;
-}
-
-nav a:hover {
-  text-decoration: none;
-  background-color: #b48ead;
-  transition: all 0.3s ease-in-out;
 }
 
 img {
@@ -79,22 +66,26 @@ aside {
   border-left: 0.6rem solid #b48ead;
 }
 
-main a {
+a {
+  display: inline-block;
+}
+
+a {
   padding: 0.2rem 0.5rem;
 }
 
-main a:link {
+a:link {
   color: #d8dee9;
   background-color: #2E3440;
   text-decoration: none;
 }
 
-main a:visited {
+a:visited {
   color: #b48ead;
   text-decoration: none;
 }
 
-main a:hover {
+a:hover {
   color: #2E3440;
   background-color: #b48ead;
   transition: all 300ms ease-in-out;
@@ -111,39 +102,24 @@ footer {
   background-color: #3b4252;
 }
 
-footer a {
-  padding: 0.2rem 0.5rem;
-}
-
-footer a:link {
-  color: #d8dee9;
-  background-color: #4c566a;
-  text-decoration: none;
-}
-
-footer a:visited {
-  color: #b48ead;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #4c566a;
-  background-color: #b48ead;
-  transition: all 300ms ease-in-out;
-  text-decoration: none;
-  z-index: 10;
-}
-
 h1 {
   font-weight: 100;
   font-size: 2rem;
   text-align: left;
   color: #4c566a;
 }
+
+main, article, aside, footer {
+  position: relative;
+}
+
 h2, h3 {
-  padding-top: 1rem;
-  margin-bottom: 1rem;
+  position: absolute;
+  top: -10rem;
+  left: -3rem;
   font-size: 2rem;
+  transform: rotate(-90deg);
+  color: #b48ead;
 }
 
 h4 {
@@ -173,6 +149,22 @@ footer {
 
   padding: 1rem;
 }
+
+.navlink, .navlink:visited {
+  background-color: inherit;
+  color: #d8dee9;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  /* border-bottom-left-radius: 0.4rem;
+  border-bottom-right-radius: 0.4rem; */
+}
+
+.navlink:hover {
+  text-decoration: none;
+  background-color: #b48ead;
+  transition: all 0.3s ease-in-out;
+}
+
 
 .titlebold {
   font-weight: 900;
@@ -241,7 +233,7 @@ footer {
     z-index: 10;
     border-top: 0.6rem solid #b48ead;
   }
-  nav a {
+  .navlink {
     margin: 0 auto;
     max-width: fit-content;
   }
