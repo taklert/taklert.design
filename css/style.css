@@ -43,13 +43,11 @@ nav {
 
 img {
   max-width: 512px;
-  grid-area: img;
   align-self: flex-end;
   padding: 0rem;
 }
 
 main {
-  grid-area: main;
   align-self: flex-end;
   padding: 1rem;
   color: #d8dee9;
@@ -57,21 +55,12 @@ main {
   background-color: #4c566a;
 }
 
-aside {
-  grid-area: aside;
-  align-self: flex-end;
-  padding: 1rem;
-  background-color: #3b4252;
-  color: #d8dee9;
-  border-left: 0.6rem solid #b48ead;
-}
-
 a {
   display: inline-block;
 }
 
 a {
-  padding: 0.2rem 0.5rem;
+  padding-inline: calc(1rem / 4);
 }
 
 a:link {
@@ -143,6 +132,7 @@ p {
   text-align: start;
   max-width: fit-content;
   max-height: fit-content;
+  font-size: 10rem;
 }
 
 footer {
@@ -195,29 +185,8 @@ footer {
 }
 
 
-.grid-container {
-    display: grid;
-    height: 100vh;
-    grid-template-areas:
-    "header header nav nav nav nav nav nav"
-    ". . . . . . . ."
-    "img img main main main aside footer footer"
-    "img img main main main aside footer footer";
-    grid-gap: 0px;
-    font-family: 'Raleway', sans-serif;
-}
-
 @media screen and (max-width: 1200px) {
-  .grid-container {
-    display: grid;
-      grid-template-areas:
-      "nav nav"
-      "header header"
-      "img img"
-      "main main"
-      "footer footer"
-      "aside aside";
-  }
+  
   nav {
     position: fixed;
     bottom: 0rem;
@@ -253,10 +222,6 @@ footer {
   .avatar {
     max-width: 60%;
     }
-  aside {
-    padding-bottom: 3rem;
-    border-bottom: 3rem solid #b48ead;
-  }
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
