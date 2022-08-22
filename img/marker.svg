@@ -7,7 +7,7 @@
    viewBox="0 0 360 640"
    version="1.1"
    id="svg5"
-   inkscape:version="1.2 (dc2aedaf03, 2022-05-15)"
+   inkscape:version="1.2.1 (9c6d41e410, 2022-07-14)"
    sodipodi:docname="marker.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
@@ -25,9 +25,9 @@
      inkscape:document-units="px"
      showgrid="false"
      shape-rendering="crispEdges"
-     inkscape:zoom="10.0125"
-     inkscape:cx="181.1236"
-     inkscape:cy="335.23096"
+     inkscape:zoom="2.503125"
+     inkscape:cx="183.37079"
+     inkscape:cy="110.26217"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2" />
@@ -35,6 +35,22 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
+    <rect
+       style="opacity:1;fill:#3ed1e5;fill-opacity:1;stroke:none;stroke-width:1.45313;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2586"
+       width="62"
+       height="62"
+       x="43.501915"
+       y="10.961571"
+       ry="0" />
+    <rect
+       style="opacity:1;fill:#3ed1e5;fill-opacity:1;stroke:none;stroke-width:1.45313;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect1680"
+       width="62"
+       height="62"
+       x="180.10791"
+       y="10.96157"
+       ry="0" />
     <path
        style="fill:#242424;fill-opacity:1;stroke:#242424;stroke-width:19.9261;stroke-opacity:0"
        id="path260"
@@ -58,5 +74,93 @@
        inkscape:export-filename="../../public-HTML-CSS/felix-foto-projekt/felix-foto-4/img/retouch.svg"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal"
+       x="69.01754"
+       y="54.117821"
+       id="text1426"><tspan
+         sodipodi:role="line"
+         id="tspan1424"
+         x="69.01754"
+         y="54.117821">i</tspan></text>
+    <rect
+       style="opacity:1;fill:#3ed1e5;stroke:none;stroke-width:1.45313;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       id="rect1591"
+       width="62"
+       height="62"
+       x="113.77676"
+       y="10.96157"
+       ry="0" />
+    <g
+       id="g1596"
+       transform="matrix(0.68669143,0,0,0.68669143,46.392786,14.696752)"
+       style="fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.15711;stroke-dasharray:none">
+      <g
+         id="g2900">
+        <path
+           id="rect760"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.15711;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           d="m 144.57812,21.458984 c -3.33368,0 -6.01563,2.6839 -6.01563,6.017578 h -12.21874 c -1.96913,0 -3.55469,1.585558 -3.55469,3.554688 v 23.427734 c 0,1.96913 1.58556,3.554688 3.55469,3.554688 h 33.85742 c 1.96913,0 3.55469,-1.585558 3.55469,-3.554688 V 31.03125 c 0,-1.96913 -3.55469,-3.554688 -3.55469,-3.554688 v 0 c 0,-3.333678 -2.68195,-6.017578 -6.01563,-6.017578 z"
+           sodipodi:nodetypes="scsssssssscss" />
+        <ellipse
+           style="opacity:1;fill:#3ed1e5;fill-opacity:1;stroke:#000000;stroke-width:4.15711;stroke-linecap:square;stroke-dasharray:none"
+           id="path1370"
+           cx="143.27246"
+           cy="41.736328"
+           rx="10.556973"
+           ry="10.529272" />
+        <rect
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:4.15711;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+           id="rect1589"
+           width="10.529563"
+           height="6.1002707"
+           x="128.02869"
+           y="21.395554"
+           ry="1.8728356" />
+      </g>
+    </g>
+    <rect
+       style="opacity:1;fill:#3ed1e5;fill-opacity:1;stroke:none;stroke-width:1.45313;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+       id="rect2519"
+       width="62"
+       height="62"
+       x="246.78551"
+       y="10.96157"
+       ry="0" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke-width:1.06318"
+       x="266.48865"
+       y="51.766258"
+       id="text2542"><tspan
+         sodipodi:role="line"
+         id="tspan2540"
+         x="266.48865"
+         y="51.766258"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:32px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:1.06318">$</tspan></text>
+    <g
+       id="g2713"
+       transform="matrix(0.66334898,0,0,0.66334898,71.069304,15.691424)"
+       style="fill:#000000;stroke-width:2.88046;stroke-dasharray:none">
+      <g
+         id="g1810"
+         transform="translate(-1.7904262,-3.5811439)"
+         style="fill:#000000;stroke:#000000;stroke-width:4.3207;stroke-dasharray:none">
+        <path
+           id="path1804"
+           style="opacity:1;fill:#000000;stroke:#000000;stroke-width:3.36616;stroke-linecap:square;stroke-dasharray:none"
+           inkscape:transform-center-x="-5.8153233e-06"
+           inkscape:transform-center-y="-0.53283004"
+           d="m 205.13889,72.961319 c -1.438,0 -15.09845,23.66231 -14.37945,24.907655 0.60283,1.044131 19.89902,1.211909 26.54493,0.505183 4.18505,-0.07839 7.71354,-0.308588 7.93685,-0.695388 0.56016,-0.97022 -10.08349,-19.403898 -11.2038,-19.403898 -0.31332,0 -1.38175,1.465267 -2.73134,3.563671 -2.88993,-4.826598 -5.57323,-8.877223 -6.16719,-8.877223 z"
+           transform="matrix(1.2835694,0,0,1.2835694,-54.080129,-64.69282)" />
+      </g>
+      <circle
+         style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2.88046;stroke-linecap:square;stroke-dasharray:none;stroke-opacity:1"
+         id="path2662"
+         cx="219.03325"
+         cy="23.979671"
+         r="4.042171" />
+    </g>
   </g>
 </svg>
