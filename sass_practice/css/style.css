@@ -1,0 +1,45 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 2rem;
+  background-color: #e2e2e2;
+  color: #2d2331;
+}
+header h2 {
+  padding: 2rem;
+  color: #2d2331;
+  font-size: clamp(3rem, 3vw, 5rem);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 5px;
+}
+
+article {
+  padding-inline: 1rem;
+}
+
+section {
+  padding: 1rem;
+  background-color: #e2e2e2;
+}
+section h2 {
+  color: #242424;
+  text-align: left;
+  font-size: clamp(1.5rem, 2.5vw, 4rem);
+}
+section p {
+  text-justify: distribute-all-lines;
+  padding-block: 1rem;
+}
+section ul {
+  list-style-type: none;
+}/*# sourceMappingURL=style.css.map */
