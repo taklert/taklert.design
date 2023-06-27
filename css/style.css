@@ -6,8 +6,8 @@
 }
 
 :root {
-  --fg: #312F42;
-  --bg: #E2E2E2;
+  --fg: #5500d4;
+  --bg: #f0f8ff;
   --gap: 1rem;
   --font-family: Raleway;
   --link-font-family: Courier;
@@ -116,7 +116,7 @@ main {
   margin-inline: auto;
   padding-inline: 5%;
   line-height: 1.25rem;
-  text-align: justify;
+  text-align: center;
   max-width: 40rem;
 }
 
