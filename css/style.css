@@ -66,8 +66,8 @@ ol {
 }
 
 .link:hover {
-  color: #78B6C8;
-  fill: #78B6C8;
+  color: #78b6c8;
+  fill: #78b6c8;
 }
 
 header {
@@ -92,7 +92,6 @@ main {
   grid-auto-columns: 100%;
   gap: 1rem;
   z-index: +1;
-  
 }
 
 .card {
@@ -108,11 +107,12 @@ main {
 }
 
 .card {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
 
- :where(article, section) p, ol {
+:where(article, section) p,
+ol {
   margin-inline: auto;
   padding-inline: 5%;
   line-height: 1.25rem;
