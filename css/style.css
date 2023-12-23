@@ -53,71 +53,22 @@ h5 {
   padding-block: 1rem;
 }
 
-ol {
-  margin-inline: auto;
-  text-align: justify;
-  list-style-type: disc;
-}
-
 :any-link {
   color: var(--fg);
   text-decoration: none;
-  font-weight: 700;
 }
 
 .link:hover {
-  color: #78b6c8;
-  fill: #78b6c8;
+  opacity: 50%;
 }
 
 header {
   position: fixed;
   top: 1rem;
-  display: grid;
-  grid-auto-flow: dense;
-  width: 100vw;
-  margin-inline: auto;
-  align-items: center;
-  text-align: center;
-  justify-items: center;
-  background-color: var(--bg);
+  display: flex;
+  margin: 0 auto;
+  align-content: space-between;
   z-index: 100;
-}
-
-main {
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-columns: 100%;
-  gap: 1rem;
-  z-index: +1;
-}
-
-.card {
-  margin-top: 6rem;
-  font-weight: 500;
-  width: 100vw;
-  height: calc(100vh - 11rem);
-  overflow-y: scroll;
-}
-
-.card::-webkit-scrollbar {
-  display: none;
-}
-
-.card {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
-}
-
-:where(article, section) p,
-ol {
-  margin-inline: auto;
-  padding-inline: 5%;
-  line-height: 1.25rem;
-  text-align: center;
-  max-width: 40rem;
 }
 
 .colorize {
@@ -131,16 +82,8 @@ ol {
 
 .navigation,
 .socialize {
-  display: inline-flex;
+  display: flex;
   gap: 1rem;
-}
-
-.navigation {
-  grid-column: span 2;
-}
-
-.socialize svg {
-  height: 2rem;
 }
 
 .socialize {
