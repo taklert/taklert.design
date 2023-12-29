@@ -17,7 +17,7 @@
 
   /* spaces & other metrics */
   --gap: 1rem;
-  --border-radius: 1em;
+  --border-radius: 0.3em;
 }
 
 html {
@@ -87,19 +87,24 @@ a:hover {
   opacity: 70%;
 }
 
-.mailmeh {
+.mail_to {
   outline: 0.2em;
-  background-color: var(--fg);
-  color: var(--bg);
   padding: 0.5em 1em;
-  border-radius: 2em;
+  border-radius: var(--border-radius);
+  background: var(--fg);
+
+  a {
+    color: var(--bg);
+  }
 }
 
 @media screen and (max-width: 640px) {
-  .mailmeh {
+  .mail_to {
     background-color: var(--bg);
+  }
+
+  .mail_to a {
     color: var(--fg);
-    border-radius: 4px;
   }
 }
 
@@ -137,12 +142,20 @@ a:hover {
   }
   p {
     text-align: justify;
+    margin-bottom: var(--gap);
+  }
+}
+
+&.card_testimonial {
+  img {
+    width: 100%;
+    object-fit: cover;
   }
 }
 
 .hero_card {
   background-color: var(--bg);
-  padding: calc(var(--gap) * 3);
+  padding: calc(var(--gap) * 3) var(--gap);
   border-radius: var(--border-radius);
   p {
     text-align: center;
@@ -160,26 +173,27 @@ a:hover {
     order: 3;
     position: fixed;
     z-index: 1000;
-    right: 1em;
-    top: 0.2em;
+    right: -110%;
+    top: -1600px;
+    top: 0;
     display: flex;
     flex-direction: column;
     align-items: end;
     justify-content: center;
     width: fit-content;
-    height: 100%;
+    height: fit-content;
     padding-bottom: calc(var(--gap) * 3);
-    padding-top: calc(var(--gap) * 4);
+    padding-top: calc(var(--gap) * 3);
     padding-inline: var(--gap);
     background-color: var(--fg);
     color: var(--bg);
-    border-radius: 1em;
-    display: none;
+    border-radius: var(--border-radius);
 
-    a {
+    a:not(.mail_to a) {
       color: var(--bg);
     }
   }
+
   .hamburger {
     display: block;
     position: fixed;
@@ -187,4 +201,31 @@ a:hover {
     right: 2.5em;
     z-index: 9999;
   }
+}
+
+.nav_open {
+  .hamburger {
+    color: var(--fg);
+  }
+
+  .hamburger::after {
+    content: "X";
+    text-align: center;
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    inset: 0;
+  }
+
+  .nav_menu {
+    display: flex;
+    right: 2em;
+    top: 1em;
+  }
+}
+
+footer {
+  align-self: flex-end;
+  background-color: var(--fg);
+  padding-block: calc(var(--gap) * 3);
 }
